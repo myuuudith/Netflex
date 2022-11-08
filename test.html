@@ -1,0 +1,1024 @@
+    <!DOCTYPE html>
+<html>
+  <head>
+    <title>NEXTFLEX - dita</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <!-- Font Family Work Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Family Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    
+
+    <style>
+      body {
+        font-family: 'Work Sans', sans-serif;
+        background-color: black;
+      }
+      
+      .card-title{
+        color: white;
+      }
+
+      .container-fluid{
+            background-color: black;
+            
+        }
+
+        .color-red{
+            color: red;
+        }
+
+      .signin-container {
+        padding: 48px 24px;
+        width: 400px;
+
+        background: #000;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+        border: 1px solid black;
+        border-radius: 8px;
+      }
+
+     .media-container{
+        padding: 52px 18px;
+    width: 950px;
+    background: black;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 25%);
+    border: 1px solid;
+    border-radius: 23px;
+      } 
+
+      .signin-title {
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 29px;
+        color: red;
+        margin-bottom: 41px;
+      }
+
+      .input-email {
+        padding: 13px 20px;
+        width: 352px;
+        height: 45px;
+
+        background: #ffffff;
+        border: 1.5px solid #000032;
+        border-radius: 8px;
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+
+        color: #b3b3b3;
+      }
+
+      .form-check-label{
+        color:aliceblue
+      }
+
+
+      .mb-12 {
+        margin-bottom: 12px;
+      }
+
+      .mb-24 {
+        margin-bottom: 24px;
+      }
+
+      .signin-btn {
+        padding: 16px 24px;
+        width: 352px;
+        height: 54px;
+        border-radius: 8px;
+      }
+
+      .signup-btn {
+        width: 352px;
+        height: 35px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        /* identical to box height */
+
+        /* Brand/Orange/Orange - #F6A973 */
+        color: #f6a973;
+      }
+
+      .sosmed-btn {
+        padding: 0px 12px;
+        width: 352px;
+        height: 40px;
+        background: #f2f2f2;
+        border-radius: 4px;
+      }
+
+      .navbar-brand {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 49px;
+      }
+
+      .navbar{
+        top: -1%;
+      }
+
+      .card-img-top{
+        max-width: 100%;
+        border-radius: 11px;
+      }
+
+      .search-input {
+        border-right: none;
+        border-top-left-radius: 24px;
+        border-bottom-left-radius: 24px;
+      }
+
+      .search-btn {
+        /* background-color: #fff; */
+        border-left: none;
+        border-top-right-radius: 24px;
+        border-bottom-right-radius: 24px;
+      }
+
+      .bi-search{
+            color: white;
+            position: absolute;
+            left: 69%;            
+            top: 18%;        
+        }
+
+        .bi-bell{
+            color: white;
+            position: relative;
+            top: 18%;
+            
+        }
+
+        .bi-person-circle{
+            color: white;
+            position: relative;
+        }
+
+        .search-input{
+            right: 14%;
+        }
+
+        p{
+          color:#ffffff
+        }
+        
+        .feedback-form{
+          min-height: 30vh;
+          display: flex;
+          justify-content:baseline;
+          align-items:flex-end;
+        }
+
+        .contact-info, .contact-us{
+          color:#f2f2f2
+        }
+
+        .alert{
+          width: 36%;
+          align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    right: -31%
+        }
+        
+      .black{
+        color: black;
+      } 
+
+    </style>
+  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="test.html">
+          <span class="color-red">NEXTFLEX</span>
+          </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse"
+          id="navbarSupportedContent"
+          style="justify-content: space-around"
+        >
+
+<!--breadcrumbs-->
+        <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="test.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page"><a href="page2.html">Library</a></li>
+              <li class="breadcrumb-item active" aria-current="page"><a href="page3.html">TV Shows</a></li>
+              <li class="breadcrumb-item active" aria-current="page"><a href="page4.html">Movies</a></li>
+              <li class="breadcrumb-item active" aria-current="page"><a href="page7.html">Contact Us</a></li>
+            </ol>
+        </nav>
+            
+<!-- Button trigger modal -->
+          <form class="d-flex" role="search">
+            <div class="input-group">
+              <input
+                class="form-control search-input"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <i class="bi bi-search"></i>
+            
+              <i class="bi bi-bell"></i>
+              
+              <button
+              class="btn"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#modalChomerce">
+            <i class="bi bi-person-circle"></i>
+            </button>
+          
+        </div>
+      </div>
+    </nav>
+
+<!-- Cards -->
+      <div class="card bg-dark text-white">
+        <img src="https://preview.redd.it/amom7gliy2t81.png?auto=webp&s=2c362816af1435fa054fe528352b8a662bbd4bad" class="card-img" alt="SPY X Family Netflix" width="280px" height="700px">
+        <div class="card-img-overlay">
+          <h5 class="card-title">SPY X Family</h5>
+          <p class="card-text">Watch SPY X Family Right now on NEXTFLEX</p>
+        </div>
+      </div>
+
+      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        Help us trough<strong>disabled</strong> your adBlock! Thank you! 
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+
+      <div class="row" style="margin: 36px 10vw">
+        <div class="col-3">
+            <div class="card bg-transparent" style="border: none" color="transparent">
+            <img
+              src="https://thumb.milzeru.com/media/frontend/infografik/2019/09/24/5d89bf49eea99dc-cover-lmkhlh54bt5ga5ie76c2hod367-20180101150520-medi.jpg"
+              class="card-img-top"
+              alt="Friends Netflix Show"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Friends</h5>
+              <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Click here to Watch
+              </button>
+            
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Friends</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                      src="https://thumb.milzeru.com/media/frontend/infografik/2019/09/24/5d89bf49eea99dc-cover-lmkhlh54bt5ga5ie76c2hod367-20180101150520-medi.jpg"
+                      class="card-img-top"
+                      alt="Friends Netflix Show"
+                    />
+                    <p class="black">Six young (20-something) people from New York City (Manhattan), on their own and struggling to survive in the real world, find the companionship, comfort and support they get from each other to be the perfect antidote to the pressures of life. This average group of buddies goes through massive mayhem, family trouble, past and future romances, fights, laughs, tears and surprises as they learn what it really means to be a friend.</p>                     
+                  </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+            <div class="card bg-transparent" style="border: none" color="transparent">
+            <img
+              src="https://jurnalisindonesia.id/uploads/large/52b90aea400a5040e4ee35de3d98c661.jpg"
+              class="card-img-top"
+              alt="Little Woman Korean Netflix Show"
+            /> 
+            <div class="card-body">
+              <h5 class="card-title bg-transparent">Little Woman</h5>
+              <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#littlewomankr">
+                Click here to Watch
+              </button>
+
+              <div class="modal fade" id="littlewomankr" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="littlewomankrLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="littlewomankrLabel">Little Woman Korean Netflix Show</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                      src="https://jurnalisindonesia.id/uploads/large/52b90aea400a5040e4ee35de3d98c661.jpg"
+                      class="card-img-top"
+                      alt="Little Woman Korean Netflix Show"
+                    />
+                    <p class="black">Three sisters get involved in a case that leads them to fight against the richest and most influential family in South Korea.<br>
+
+                      Oh In-Joo (Kim Go-Eun) is the oldest sister sister. She grew up in a terribly poor environment and she is still poor. Since she was a young child, she realized that money was the most important thing to protect herself and her family. Her dream is to live an ordinary life like other people. She gets involved in a case that could change her life.<br>
+                      
+                      Oh In-Kyung (Nam Ji-Hyun) is the middle sister. She is an enthusiastic reporter at a news station. She believes in doing the right things. She also has always been poor, but money doesn't rule life. She now begins to dig into a mysterious case that she first faced when she first became a reporter.<br>
+                      
+                      Oh In-Hye (Park Ji-Hu) is the youngest of the three sisters. She is a student at a prestigious arts high school and she has a natural talent for painting. She often feels her two older sisters’ love for her is too much.</p>                     
+                  </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+            <div class="card bg-transparent" style="border: none" color="transparent">
+            <img
+              src="https://privacytable.com/wp-content/uploads/2022/06/Little-Women-on-Netflix.webp"
+              class="card-img-top"
+              alt="Little Woman Nteflix Show"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Little Woman</h5>
+              <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#littlewoman">
+                Click here to Watch
+              </button>
+
+              <div class="modal fade" id="littlewoman" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="littlewomanLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="littlewomanLabel">Little Woman Netflix Movies</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                      src="https://privacytable.com/wp-content/uploads/2022/06/Little-Women-on-Netflix.webp"
+                      class="card-img-top"
+                      alt="Little Woman Netflix Movie"
+                    />
+                    <p class="black">In the years after the Civil War, Jo March (Saoirse Ronan) lives in New York City and makes her living as a writer, while her sister Amy March (Florence Pugh) studies painting in Paris. Amy has a chance encounter with Theodore "Laurie" Laurence (Timothée Chalamet), a childhood crush who proposed to Jo, but was ultimately rejected. Their oldest sibling, Meg March (Emma Watson), is married to a schoolteacher, while shy sister Beth (Eliza Scanlen) develops a devastating illness that brings the family back together.</p>                     
+                  </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+            
+        <div class="col-3">
+            <div class="card bg-transparent" style="border: none" color="transparent">
+            <img
+              src="https://www.mainmain.id/uploads/post/2020/04/16/haikyuu.jpg"
+              class="card-img-top"
+              alt="Haikyu"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Haikyu</h5>
+              <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#haikyuu">
+                Click here to Watch
+              </button>
+              
+              <div class="modal fade" id="haikyuu" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="haikyuuLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="haikyuuLabel">haikyuu</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                      src="https://www.mainmain.id/uploads/post/2020/04/16/haikyuu.jpg"
+                      class="card-img-top"
+                      alt="haikyuu"
+                    />
+                    <p class="black">Ever since having witnessed the "Little Giant" and his astonishing skills on the volleyball court, Shouyou Hinata has been bewitched by the dynamic nature of the sport. Even though his attempt to make his debut as a volleyball regular during a middle school tournament went up in flames, he longs to prove that his less-than-impressive height ceases to be a hindrance in the face of his sheer will and perseverance.<br>
+
+                      When Hinata enrolls in Karasuno High School, the Little Giant's alma mater, he believes that he is one step closer to his goal of becoming a professional volleyball player. Although the school only retains a shadow of its former glory, Hinata's conviction isn't shaken until he learns that Tobio Kageyama—the prodigy who humiliated Hinata's middle school volleyball team in a crushing defeat—is now his teammate.<br>
+                      
+                      To fulfill his desire of leaving a mark on the realm of volleyball—so often regarded as the domain of the tall and the strong—Hinata must smooth out his differences with Kageyama. Only when Hinata learns what it takes to be a part of a team will he be able to join the race to the top in earnest.</p>                     
+                  </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      <div class="row" style="margin: 36px 0vw">
+        <div class="col-3">
+            <div class="card bg-transparent" style="border: none" color="transparent">
+            <img
+              src="https://wallpapercave.com/wp/wp5933998.jpg"
+              class="card-img-top"
+              alt="Ozark"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Ozark</h5>
+              <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#ozark">
+                Click here to Watch
+              </button>
+
+            <div class="modal fade" id="ozark" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="ozarkLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="ozarkLabel">Ozark Netflix Show</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                      src="https://wallpapercave.com/wp/wp5933998.jpg"
+                      class="card-img-top"
+                      alt="Ozark Netflix Show"
+                    />
+                    <p class="black">The Byrdes and their teenage kids Charlotte and Jonah look like, and mostly are, an ordinary family with ordinary lives. Except that husband/father Marty, a Chicago financial advisor, also serves as the top money-launderer for Mexico's second-largest drug cartel. When things go awry, he must uproot his family from the skyscrapers of Chicago and relocate to the lazy lake region of the Missouri Ozarks.</p>                     
+                  </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-3">
+            <div class="card bg-transparent" style="border: none" color="transparent">
+            <img
+              src="https://assets.change.org/photos/0/kt/jn/cQKTJNKBXunzgwo-1600x900-noPad.jpg?1526033355"
+              class="card-img-top"
+              alt="Brooklyn 99 Netflix Show"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Brooklyn 99</h5>
+              <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#brooklyn99">
+                Click here to Watch
+              </button>
+
+              <div class="modal fade" id="brooklyn99" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="brooklyn99Label" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="brooklyn99Label">brooklyn 99</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                      src="https://assets.change.org/photos/0/kt/jn/cQKTJNKBXunzgwo-1600x900-noPad.jpg?1526033355"
+                      class="card-img-top"
+                      alt="Brooklyn 99 Netflix Show"
+                    />
+                    <p class="black">Captain Ray Holt takes over Brooklyn's 99th precinct, which includes Detective Jake Peralta, a talented but carefree detective who's used to doing whatever he wants. The other employees of the 99th precinct include Detective Amy Santiago, Jake's over achieving and competitive partner; Detective Rosa Diaz, a tough and kept to herself coworker; Detective Charles Boyle, Jake's best friend who also has crush on Rosa; Detective Sergeant Terry Jeffords, who was recently taken off the field after the birth of his twin girls; and Gina Linetti, the precinct's sarcastic administrator.</p>                     
+                  </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="card bg-transparent" style="border: none" color="transparent">
+            <img
+              src="https://cdn-2.tstatic.net/wow/foto/bank/images/cover-film-pengabdi-setan_20171015_120935.jpg"
+              class="card-img-top"
+              alt="Pengabdi Setan Netflix Show"
+            />
+            <div class="card-body">
+                <h5 class="card-title">Pengabdi Setan</h5>
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#pengabdisetan">
+                  Click here to Watch
+                </button>
+  
+                <div class="modal fade" id="pengabdisetan" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="pengabdisetanLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="pengabdisetanLabel">Pengabdi Setan</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                        src="https://cdn-2.tstatic.net/wow/foto/bank/images/cover-film-pengabdi-setan_20171015_120935.jpg"
+                        class="card-img-top"
+                        alt="Pengabdi Setan Netflix Show"
+                      />
+                      <p class="black">Setelah sakit aneh selama 3 tahun, Ibu akhirnya meninggal dunia. Bapak lalu memutuskan untuk kerja di luar kota meninggalkan anak-anak. Tak lama kemudian, anak-anak merasa bahwa Ibu kembali berada di rumah. Situasi semakin menyeramkan ketika mereka mengetahui bahwa Ibu datang lagi tidak sekedar untuk menjenguk, tapi untuk menjemput mereka.</p>                     
+                    </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <div class="col-3">
+                <div class="card bg-transparent" style="border: none" color="transparent" >
+                  <img
+                    src="https://www.streamwijzer.be/wp-content/uploads/2021/05/Joker-Netflix-film-2019-1068x560.jpeg"
+                    class="card-img-top"
+                    alt="Joker Netflix Show"
+                  />
+                  <div class="card-body">
+                      <h5 class="card-title">Joker</h5>
+                      <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#Joker">
+                        Click here to Watch
+                      </button>
+                    
+                      <div class="modal fade" id="Joker" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="JokerLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="JokerLabel">Joker</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <img
+                              src="https://www.streamwijzer.be/wp-content/uploads/2021/05/Joker-Netflix-film-2019-1068x560.jpeg"
+                              class="card-img-top"
+                              alt="Joker Netflix Show"
+                            />
+                            <p class="black">leck is a struggling clown who is terrorized daily on the streets, while trying to do his job as a sign holder. He struggles to make a living because he has to take care of his sick mother and has trouble holding on to the low paying job he does have.<br>
+
+                              Throughout the movie we see how most of Gotham City is struggling from its failing economy. Fleck is struggling just as much as the rest of them — maybe even worse with his mental illness.<br>
+                              
+                              We follow Fleck's journey as he tries to make a living as a comedian while also trying to figure out where he came from. Between all the major twists and turns, the audience gets to see how his mental illness affects his daily life and how it affects how people interact with him.</p>                     
+                          </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+        <div class="row" style="margin: 36px 0vw">
+        <div class="col-lg-3">
+            <div class="card bg-transparent" style="border: none" color="transparent">
+            <img
+              src="https://cdn-brilio-net.akamaized.net/community/2019/06/18/19928/image_1560524367_5d03b64f05ca2.jpg"
+              class="card-img-top"
+              alt="Lucifer Netflix Show"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Lucifer</h5>
+              <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#Lucifer">
+                Click here to Watch
+              </button>
+            
+              <div class="modal fade" id="Lucifer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="LuciferpLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="LuciferLabel">Lucifer</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                      src="https://cdn-brilio-net.akamaized.net/community/2019/06/18/19928/image_1560524367_5d03b64f05ca2.jpg"
+                      class="card-img-top"
+                      alt="Lucifer Netflix Show"
+                    />
+                    <p class="black">Lucifer Morningstar, bored from his sulking life in hell, comes to live in Los Angeles. While there, he helps humanity with its miseries through his experience and telepathic abilities to bring people's deepest desires and thoughts out of them. While meeting with a Detective in his nightclub (Lux), a shootout involving him and the Detective leads him to become an LAPD consultant who tries to punish people for their crimes through law and justice.</p>                     
+                  </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+            <div class="card bg-transparent" style="border: none" color="transparent">
+            <img
+              src="https://w0.peakpx.com/wallpaper/908/411/HD-wallpaper-ted-2-06-movie-30-2015.jpg"
+              class="card-img-top"
+              alt="Ted 2 Netflix Show"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Ted 2</h5>
+              <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#Ted2">
+                Click here to Watch
+              </button>
+            
+              <div class="modal fade" id="Ted2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="Ted2Label" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="Ted2Label">Ted 2</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                      src="https://w0.peakpx.com/wallpaper/908/411/HD-wallpaper-ted-2-06-movie-30-2015.jpg"
+                      class="card-img-top"
+                      class="card-img-top"
+                      alt="Ted 2 Netflix Show"
+                    />
+                    <p class="black">Months after John's divorce, Ted and Tami-Lynn's marriage seems to be on the same road. To patch things up, Ted and Tami-Lynn plan to have a child with John's help, but their failed efforts backfire disastrously. Namely, Ted is declared property by the government, and he loses all of his civil rights. Now, Ted must fight a seemingly hopeless legal battle with an inexperienced young lawyer to regain his rightful legal status. Unfortunately, between Ted's drunken idiocies and sinister forces interested in this situation to exploit him, Ted's quest has all the odds against him.</p>                     
+                  </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+            <div class="card bg-transparent" style="border: none" color="transparent">
+            <img
+              src="https://wallpapercave.com/wp/wp9424755.jpg"
+              class="card-img-top"
+              alt="Avatar"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Avatar</h5>
+              <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#Avatar">
+                Click here to Watch
+              </button>
+            
+              <div class="modal fade" id="Avatar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="AvatarLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="AvatarLabel">Avatar</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                      src="https://wallpapercave.com/wp/wp9424755.jpg"
+                      class="card-img-top"
+                      alt="Avatar"
+                    />
+                    <p class="black">When his brother is killed in a robbery, paraplegic Marine Jake Sully decides to take his place in a mission on the distant world of Pandora. There he learns of greedy corporate figurehead Parker Selfridge's intentions of driving off the native humanoid "Na'vi" in order to mine for the precious material scattered throughout their rich woodland. In exchange for the spinal surgery that will fix his legs, Jake gathers knowledge, of the Indigenous Race and their Culture, for the cooperating military unit spearheaded by gung-ho Colonel Quaritch, while simultaneously attempting to infiltrate the Na'vi people with the use of an "avatar" identity. While Jake begins to bond with the native tribe and quickly falls in love with the beautiful alien Neytiri, the restless Colonel moves forward with his ruthless extermination tactics, forcing the soldier to take a stand - and fight back in an epic battle for the fate of Pandora.</p>                     
+                  </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-3">
+            <div class="card bg-transparent" style="border: none" color="transparent">
+            <img
+              src="https://lightbox-prod.imgix.net/images/assets/100139707-p12465613_v_h10_aa.jpg"
+              class="card-img-top"
+              alt="Sully Netflix Show"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Sully</h5>
+              <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#Sully">
+                Click here to Watch
+              </button>
+            
+              <div class="modal fade" id="Sully" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="SullyLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="SullyLabel">Sully</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                      src="https://lightbox-prod.imgix.net/images/assets/100139707-p12465613_v_h10_aa.jpg"
+                      class="card-img-top"
+                      alt="Sully Netflix Show"
+                    />
+                    <p class="black">On Thursday, January 15, 2009, the world witnessed the “Miracle on the Hudson” when pilot Chesley “Sully” Sullenberger glided his disabled plane onto the frigid waters of the Hudson River, saving the lives of all one hundred fifty-five aboard. However, even as Sully was being heralded by the public and the media for his unprecedented feat of aviation skill, an investigation was unfolding that threatened to destroy his reputation and his career.</p>                     
+                  </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="row" style="margin: 36px 0vw">
+        <div class="col-lg-3">
+            <div class="card bg-transparent" style="border: none" color="transparent">
+              <img
+                src="https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2022/09/15/2333549946.jpeg"
+                class="card-img-top"
+                alt="Ngeri-ngeri Sedap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ngeri-ngeri Sedap</h5>
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#Ngeri-ngeri-Sedap">
+                  Click here to Watch
+                </button>
+              
+                <div class="modal fade" id="Ngeri-ngeri-Sedap" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="Ngeri-ngeri-SedapLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="Ngeri-ngeri-SedapLabel">Ngeri-ngeri Sedap</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                        src="https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2022/09/15/2333549946.jpeg"
+                        class="card-img-top"
+                        alt="Ngeri-ngeri Sedap"
+                      />
+                      <p class="black">Pak Domu dan Mak Domu yang tinggal bersama Sarma, ingin sekali tiga anaknya: Domu, Gabe dan Sahat yang sudah lama merantau pulang untuk menghadiri acara adat, tetapi mereka menolak pulang karena hubungan mereka tidak harmonis dengan Pak Domu.</p>                     
+                    </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="card bg-transparent" style="border: none" color="transparent">
+              <img
+                src="https://pbs.twimg.com/media/DrtTeRNVsAEKRxh.jpg"
+                class="card-img-top"
+                alt="Girl From Nowhere Netflix Show"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Girl From Nowhere</h5>
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#Girl-From-Nowhere">
+                  Click here to Watch
+                </button>
+              
+                <div class="modal fade" id="Girl-From-Nowhere" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="Girl-From-NowhereLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="Girl-From-NowhereLabel">Girl From Nowhere</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                        src="https://pbs.twimg.com/media/DrtTeRNVsAEKRxh.jpg"
+                        class="card-img-top"
+                        alt="Girl From Nowhere Netflix Show"
+                      />
+                      <p class="black">The plot revolves around Nanno, an enigmatic girl who transfers to different private schools in Thailand and exposes the students and faculty's stories of lies, secrets, and hypocrisy. Nanno on occasion lies to provoke others. She is revealed to be an immortal entity, punishing wrongdoers for their crimes and misdeeds.</p>                     
+                    </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="card bg-transparent" style="border: none" color="transparent">
+              <img
+                src="https://images3.alphacoders.com/115/1158528.jpg"
+                class="card-img-top"
+                alt="Knife out"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Knife Out</h5>
+               <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#KnifeOut">
+                Click here to Watch
+              </button>
+            
+              <div class="modal fade" id="KnifeOut" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="KnifeOutLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="KnifeOutLabel">Knife Out</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                      src="https://images3.alphacoders.com/115/1158528.jpg"
+                      class="card-img-top"
+                      alt="Knife out"
+                    />
+                    <p class="black">Nothing could blemish the otherwise lavish birthday party at the palatial estate of the acclaimed crime/mystery novelist, Harlan Thrombey, except for his strange and unaccountable death. Now, the sharp knife in the silver-haired deceased's hand is a dead giveaway that something, or someone, had been bothering Harlan; nevertheless, the cryptic detective, Benoit Blanc, is not entirely sure. 
+                      <br> Indeed, there is more than one member of the successful author's clingy family who has been economical with the truth so far--and as Blanc struggles to shed light on a tangled mess of half-baked leads and little white lies--all eyes are on the grand prize: Harlan's magnificent legacy. Can Benoit get to the bottom of this perplexing case before someone else dies, too?</p>                     
+                  </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="col-lg-3">
+            <div class="card bg-transparent" style="border: none" color="transparent">
+                 <img
+                src="https://occ.a.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABb4XP2msE9wsFK_q5rhqAj_omP_b8eTI5_lf3m_F6TxDKs5lJ3XfIXPoOH7lUi49V73nVjl2kI27qUUJ9TTeESrDqmXp94Nu-e4y.jpg?r=374"
+                class="card-img-top"
+                alt="Mean Girls"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Mean Girls</h5>
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#MeanGirls">
+                Click here to Watch
+              </button>
+            
+              <div class="modal fade" id="MeanGirls" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="MeanGirlsLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="MeanGirlsLabel">Mean Girls</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                      src="https://occ.a.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABb4XP2msE9wsFK_q5rhqAj_omP_b8eTI5_lf3m_F6TxDKs5lJ3XfIXPoOH7lUi49V73nVjl2kI27qUUJ9TTeESrDqmXp94Nu-e4y.jpg?r=374"
+                      class="card-img-top"
+                      alt="Mean Girls"
+                    />
+                    <p class="black">Raised in the African bush country by her zoologist parents, Cady Heron thinks she knows all about the "survival of the fittest". But the law of the jungle takes on a whole new meaning when the home-schooled 16-year old enters public high school for the first time. Trying to find her place between jocks, mathletes, and other subcultures, Cady crosses paths with the meanest species of all - the Queen Bee, aka the cool and calculating Regina George, leader of the school's most fashionable clique, the Plastics. When Cady falls for Regina's ex-boyfriend Aaron Samuels, though, the Queen Bee is stung - and she schemes to destroy Cady's social future. Cady's own claws soon come out as she leaps into a hilarious "Girl World" war that has the whole school running for cover.</p>                     
+                  </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="modalChomerce"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content" style="background: none; border: none;">
+          <div class="modal-body">
+
+            <!-- Sign In Area -->
+            <div class="signin-container">
+              <div style="display:flex; justify-content:space-between;">
+                <div class="signin-title">Account</div>
+                <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                style="position: relative;
+                bottom: 35px;
+                left: 15px;"
+              ></button>
+              </div>
+              <div class="mb-24">
+                <input
+                  class="input-email"
+                  type="text"
+                  placeholder="Enter nickname or Email"
+                />
+              </div>
+              <div
+                class="form-check form-switch mb-24"
+                style="display: flex; justify-content: center"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="flexSwitchCheckDefault"
+                />
+                <label
+                  class="form-check-label"
+                  for="flexSwitchCheckDefault"
+                  style="padding-left: 10px"
+                  >Keep me Signed in</label
+                >
+            </div>
+              <button type="button" class="btn btn-secondary signin-btn mb-24">
+                Sign in
+              </button>
+              
+              <button type="button" class="btn btn-light signup-btn mb-24">
+                Sign up
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="feedback-form">
+        <div class="contact-sec">
+          <div class="contact-info">
+            <div><i class="bi bi-geo-alt"></i> Address
+            <p>London Bridge, Jakarta, Australia</p></div>
+            <div><i class="bi bi-inbox"></i> Mail</div>
+            <p>Londontrilia@feedback.com</p>
+            <div><i class="bi bi-telephone-forward-fill"></i> Phone
+            <p>+01 092 9283661</p></div>
+          </div>
+          </div>
+        
+          <div class="contact-form">
+            <h2 class="contact-us">Contact Us</h2>
+            <form class="contact" action="" method="post"></form>
+            <input type="text" name="name" class="text-box" placeholder="Your name" required>
+            <input type="email" name="email" class="text-box" placeholder="Your Email" required><br>
+          <textarea name="Message" rows="5" cols="80" placeholder="Input Your Feedback" required></textarea><br>
+          <input type="submit"  name="submit" class="send-btn" value="send">
+          </div>
+        
+        </div>
+        </div>
+        </div>
+      </body>
+  </body>
+</html>
